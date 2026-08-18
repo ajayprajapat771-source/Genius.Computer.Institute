@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genius Computer Institute</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="Icon/Genus.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Playwrite+NZ:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+     <link rel="icon" href="Icon/Genus.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Playwrite+NZ:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+
+    body{
+          max-width: 100%;
+          width: 100%;
+    height: 900px; /* Sirf upar image */
+    background-image: url(Icon/Gemini_Generated_Image_ptyw1iptyw1iptyw.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    user-select: none;
+    margin: 0;
+    }
+
+    .sectoin{
+        background: white;
+
+        max-width: 100%;
+      
+        width: 100%;
+          transition: all 0.3s ease;
+        padding: 12px 13px;
+      
+  
+
+   
+
+    }
+
+    .sectoin ul{
+        display: flex;
+           justify-content: right;
+           padding: 12px;
+        gap: 30px   ;
+
+                list-style: none;
+             
+        
+    }
+
+    #Op{
+         opacity: 0;
+    transform: translateY(-20px);
+    transition: .8s;
+    }
+
+    #Op.show{
+        opacity: 1;
+            transform: translateY(0);
+    }
+
+    .sectoin li a{
+
+        text-decoration: none;
+        font-size: 22px;
+          transition: all 0.3s ease;
+    padding: 12px 13px;
+  color: black;
+        margin: 1px;
+        text-shadow:  0 0 10px black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+    }
+
+    .sectoin img{
+        height: 250px;
+        transform: scale(1.1);
+        position:absolute;
+        z-index: 1;
+        margin-top: -75px;
+        animation: Img 2s infinite  alternate;
+    
+    }
+
+    @keyframes Img {
+        from{
+            transform: scale(1.1);
+
+        }to{
+            transform: scale(1.0);
+
+        }
+        
+    }
+
+    .sectoin li a:hover{
+        background: red;
+        padding: 12px 13px;
+        color: white;
+        filter: drop-shadow(2px 2px 5px blue);
+        left: 15px;
+        
+        border-radius: 30px;
+
+    }
+
+
+    .Genius{
+    text-align: center;
+    background:  linear-gradient(rgba(0, 0, 0, 0.178),rgba(14, 17, 184, 0.473));
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter:blur(10px);
+    padding: 12px 13px;
+    max-width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;    
+     border: 10px solid black;
+     border-top: 1px solid rgba(0, 0, 0, 0.151);
+     border-radius: 0 30px 0 100%;
+     box-shadow: 2px 2px 5px black;
+    }
+
+    .Genius h1{
+        color: white;
+  font-family: "Science Gothic", sans-serif;
+  font-size: 50px;
+
+  margin: 0;
+    }
+
+    .Genius p{
+        font-family: "Science Gothic", sans-serif;
+        color: black;
+
+    }
+
+    .sectoin p{
+        display: none;
+    }
+
+    .Skills{
+
+        max-width: 100%;
+        height: 300px;
+        text-align: center;
+        overflow: hidden;
+         margin: 20px;
+       
+    
+    }
+    .Skills ul{
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
+        padding: 12px 13px;
+         gap: 20px   ;
+             
+    }
+
+    .Skills li{
+        background: white;
+   position: relative;
+        list-style: none;
+       
+        font-size: 15px;
+        border-radius: 50px 0 0 10px;
+            margin: 2px;
+            transition:  all 0.3s ease;
+overflow: hidden;
+ font-family: "Science Gothic", sans-serif;
+    }
+    .Skills li::before{
+        content: "";
+        background: white;
+    
+        left: -500px;
+        filter: blur(20px);
+        color: white;
+        overflow:hidden;
+        width: 200px;
+        transform: rotate(50deg);
+        height: 50px;
+        position: absolute;
+        display: flex;
+        transition: all 0.3s ease;
+        animation:ansh  2s linear infinite;
+       
+
+
+    }
+
+    .Skills li:hover::before{
+        background: white;
+    }
+
+    @keyframes ansh {
+        from{
+            left: -500px;
+      
+        }to{
+            left: 500px;
+                  color: red;
+           
+        }
+    }
+
+
+    .Skills li:hover{
+        background: black;
+        color: white;
+        
+         border-radius: 0%  0% 0% 60%;
+         
+         filter: drop-shadow(2px 2px 5px black);
+       
+    }
+
+    #Sec.active{
+        position: fixed;
+        transition: all 0.3s ease;
+        background: rgba(255, 255, 255, 0.801);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+    .Card{
+        background: white;
+        margin: 0;
+        padding: 12px 13px;
+        
+
+}
+
+.Card ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px ;
+    list-style: none;
+
+    
+}
+
+
+
+.Card p:hover{
+     background: red;
+
+      color: white;
+      font-family: 'arial';
+      font-weight: bold;
+      padding: 12px 13px;
+      border-radius: 50px;
+    
+}
+
+.Card li{
+background: linear-gradient(to top left,green,white);
+overflow: hidden;
+ border-radius: 58% 42% 35% 65% / 20% 35% 65% 58%;
+
+transition: all 0.3s ease;
+}
+
+.Card li:hover{
+filter: drop-shadow(5px 5px 10px black);
+transform: translateY(-10px);
+ border-radius: 2px;
+
+    
+    
+}
+
+
+
+
+.Card p::before{
+    content: ".";
+}
+.Card p{
+    margin: 1px;
+}
+
+.Card h1{
+    transition:all ease-in-out 0.6s;
+   background: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   text-align: center;
+    color: white;
+    margin-top: 0;
+
+    font-size: 25px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    padding: 12px 13px;
+    max-width: 100%;
+ 
+}
+
+.Card li:hover h1{
+    background: rgba(0, 0, 0, 0.418);
+    text-shadow: 0 2px 2px red,
+    0 4px 4px   green,
+    0 6px 6px  black;
+    filter: drop-shadow(2px 2px 5px black);
+    transform: rotate(360deg);
+
+}
+
+
+
+
+
+
+    .Card h5{
+        margin: 2px;
+        font-size: 19px;
+    }
+.Card p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px;
+    transition: all 0.3s ease;
+    margin: 10px;
+}
+
+
+    
+
+
+.Card h2{
+    text-align: center;
+    font-size: 30px;
+    background: linear-gradient( to left,green,red);
+    animation: Glow 2s infinite alternate;
+    transition: all 0.3s ease;
+    border: 1px solid black;
+    max-width: 100%;
+    -webkit-background-clip: text;
+    padding: 12px 13px;
+    color: transparent;
+    font-weight: bold;
+    font-family: "Science Gothic", sans-serif;
+
+
+}
+
+@keyframes Glow {
+    from{
+        text-shadow: 2px 2px 5px red,
+        6px 6px 6px green;
+
+    }to{
+          text-shadow: 2px 2px 5px green,
+        6px 6px 6px red;
+
+
+    }
+    
+}
+
+
+
+
+.Card a{
+    background: green;
+    border: 1px solid green;
+    color: white;
+    padding: 1px 12px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+@media (max-width:768px) {
+    .mob{
+        display: block !important;
+    }
+
+
+
+    .MM{
+        width: 100%;
+    }
+
+
+    .the img{
+    width: 260px ;
+    height: 230px;
+    border-radius: 20% 20% 0%;
+
+}
+
+.the{
+    height: 20px;
+}
+   
+    .Card h2{
+        font-size: 26px;
+    }
+
+
+    #MM{
+        font-size: 11px;
+        margin: 2px;
+        width: 110%;
+        text-align: center;
+        padding: 5px 13px;
+    }
+    .sectoin p{
+        display: block;
+        color: black;
+        font-size: 25px;
+    
+
+        text-align: right;
+    }
+    .Skills ul{
+        display: grid;
+        grid-template-columns: 1fr;
+            padding: 12px 13px;
+        margin: 2px;
+        
+    }
+
+ .Card h1{
+    font-size: 19px;
+ }
+   
+
+   
+
+    .Genius{
+         border-radius: 0 30px 0 90%;
+         transition: all 0..3s ease;
+
+
+    }
+
+      .Genius p   {
+        font-size: 17px;
+        text-align: right;
+        color: wheat;
+
+
+    }
+    .Genius h1{
+        font-size: 30px;
+text-align: right;
+
+    }
+    .Genius p   {
+        font-size: 17px;
+        text-align: right;
+        color: wheat;
+
+
+    }
+
+
+.Cors ul{
+    display: grid;
+    grid-template-columns: 1fr;
+
+
+}
+
+
+.sectoin li{
+display: none;
+padding: 12px 13px;
+}
+
+.Card ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 96%;
+}
+
+ .Skills ul{
+         gap: 9px   ;
+             
+    }
+    
+  
+
+    .icc p{
+        font-size: 15px;
+        display: grid;
+    }
+
+    .icc{
+    display: grid !important;
+    gap: 0px    !important;
+  
+
+}
+}
+
+
+.the{
+    background: black;
+    padding: 12px 13px;
+    overflow: hidden;
+    max-width: 100%;
+    height: 230px;
+    overflow: hidden;
+    position: relative;
+    
+
+}
+
+.the ul{
+    display: flex;
+      position: relative;
+    list-style: none;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.the li {
+        padding: 12px 13px;
+    width: 350px;
+    animation: img-border 2s infinite alternate;
+    
+    transition: all  1s ease;
+}
+
+.the::before{
+    content: '';
+
+    color: wheat;
+    font-size: 30px;
+    text-align: center;
+    background: linear-gradient(to left,rgb(2, 255, 2),rgba(0, 0, 0, 0.151));
+    width: 0%;
+    height: 600px;
+    padding: 12px 13px;
+
+    margin: 0;
+    transition: all 0.3s ease;
+    animation: Slow 10s  1 forwards;
+  position: absolute;
+}
+
+@keyframes Slow {
+    From{
+          width: 0%;
+            color: transparent;
+       
+
+
+    }to{
+        width: 100%;
+        text-shadow: 0px 2px 2px red,
+        0px 4px 4px green,
+        0px 6px 6px white;
+       transform: rotate(60deg);
+       background: linear-gradient(to left,rgb(255, 2, 2),rgba(0, 0, 0, 0.151));
+       border-radius: 30% 20%;
+       
+    }
+    
+}
+
+@keyframes img-border {
+    From{border-radius: 0;
+    }to{border-radius: 50% 800%;}
+    
+}
+
+.mob{
+    background: rgba(5, 5, 5, 0.219);
+    max-width: 100%;
+    width: 0px;
+    position: absolute;
+    border-radius: 0% 0% 30% 0%;
+    border-top: 3px solid red;
+    border-right: 3px solid rgba(72, 255, 0, 0.658);
+        height: 528px;
+   z-index: 1;
+   display: none;
+   transition: all 0.3s ease;
+   overflow: hidden;
+  
+}
+
+.mob ul{
+    display: grid;
+    list-style: none;
+      gap: 20px   ;
+
+
+}
+
+.mob li a{
+    text-decoration: none;
+
+   
+    font-size: 20px;
+    font-weight: bold;
+        color: white;
+    filter: drop-shadow(2px 2px 5px blue);
+    text-align: center;
+    transition: all 0.3s ease;
+    padding: 0px 0px;
+
+  
+}
+
+.mob li:hover{
+    border: 1px solid black;
+    border-radius: 60% 60% 0% / 20% 60%;
+    padding: 12px 13px;
+
+    border: none;
+    box-shadow: 2px 2px 5px red;
+}
+
+
+
+.Card h4{
+    background: rgba(255, 255, 255, 0.288);
+    border-radius: 20px;
+    top: 100px;
+    padding: 12px 13px ;
+    z-index: 1;
+    color: white;
+    box-shadow: 2px 2px 5px black;
+    left: 0;
+  transition: all 1s ease;
+    right: 0;
+    transform: rotateX(50deg);
+    width: 0px;
+
+    overflow: hidden;
+    text-align: center;
+    
+
+}
+
+.Card h4::before{
+        content: "";
+        background:red;
+     color: white;
+        overflow:hidden;
+        width: 800px;
+        transform: rotate(50deg);
+        height: 50px;
+        position: absolute;
+        display: flex;
+        transition: all 0.3s ease;
+    
+    
+
+}
+
+
+.Card h4:hover::before{
+    border: 1px solid black;
+ border-radius: 20% 0% 0%;
+ filter: drop-shadow(2px 3px 6px blue);
+ background: linear-gradient(rgba(0, 0, 0, 0.274),rgba(0, 0, 255, 0.397));
+  transform: rotate(100deg);
+  
+}
+
+.Card li:hover  h4{
+    width: 100%;
+     transform: rotateX(0deg) rotate(360deg);
+
+     color: white;
+    
+}
+
+.Card  s{
+    color: blue;
+
+}
+
+.Card h4:hover{
+    background: red;
+    font-size: 20px;
+    transition: all 0.3s ease;
+   
+}
+
+.Card a{
+background: transparent;
+padding: 12px 13px;
+text-decoration: none;
+transition: all 0.3s ease;
+text-shadow:  0 0  10px black;
+}
+
+.Card h4:hover a{
+    background: blue;
+
+    box-shadow: 0 0 20px blue;
+    border: 1px solid blue;
+    transform: scale(1.1);
+}
+
+.RC{
+    background: linear-gradient(to left, black,white);
+    border: 1px solid black;
+    text-align: center;
+    color: rgb(15, 15, 15);
+   
+    margin: 0;
+}
+
+.RC p{
+     font-size: 23px;
+   
+    margin: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.MM{
+ border-radius: 0px;
+    transition: all 0.3s  ease;
+
+
+  
+}
+
+.MM:hover{
+   border-radius: 80px;
+   transform: scale(1.1);
+}
+
+
+.icc{
+    display: flex;
+    background: black;
+        gap: 30px   ;
+        justify-content: center;
+
+}
+.icc p{
+    color: white;
+    border: 1px solid red;
+    text-align: center;
+transition: all 1s ease;
+text-align:center;
+    padding: 12px 13px;     
+  
+}
+
+.icc p:hover{
+    color: white;
+    transform: scale(1.1);
+    background: red;
+    filter:grayscale(25deg);
+ 
+}
+
+.icc img{
+    width: 34px;
+    height: 34px;
+
+}
+.icc:hover  img{
+    transform: rotate(360deg);
+}
+</style>
+<body>
+<div id="Sec" class="sectoin">
+    <img src="Icon/real.png" alt="">
+    
+    <ul>
+        <li><a href="index.html"> Home </a></li>
+        <li><a href="Genius computer From.html">Form</a></li>
+        <li><a href="Update.html"> Update</a></li>
+        <li><a href="Genius computer From.html"> Contect</a></li>
+    </ul>
+    <p onclick="Open()" id="close"><span>|</span><span>|</span><span>|</span></p>
+</div>
+
+<div id="Secc" class="mob"  >
+        <ul>
+        <li><a href="index.html"> Home </a></li>
+        <li><a href="Genius computer From.html">Form</a></li>
+        <li><a href="Update.html"> Update</a></li>
+        <li><a href="Genius computer From.html"> Contect</a></li>
+
+        </ul>
+</div>
+
+<div class="Genius" id="Genius" >
+    <h1>Genius Computer Institute</h1>
+    <p>Learning never stop</p>
+</div>
+
+
+<div id="SS" class="Skills">
+    <ul >
+        <li id="MM">
+            <h2>100% Improvment</h2>
+</li>
+       <li id="MM">
+         <h2>100% Learning Target!</h2>
+</li>
+  <li id="MM">
+            <h2>100% Job's Learning Target!</h2>
+    </li>
+    <li id="MM">
+            <h2>100%  Rating </h2>
+     </li>
+    </ul>
+    
+
+</div>
+<div class="the">
+     <marquee behavior="" direction="">
+
+    <ul>        
+            <li><img src="Genius Computer Data_.Cip/ACCA Compute3r.avif" alt=""></li>
+             <li><img src="Genius Computer Data_.Cip/img.6.jfif" alt=""></li>
+              <li><img src="Genius Computer Data_.Cip/img.7..jfif" alt=""></li>
+               <li><img src="Genius Computer Data_.Cip/img.8.webp" alt=""></li>
+                <li><img src="Genius Computer Data_.Cip/img2.png" alt=""></li>
+                 <li><img src="Genius Computer Data_.Cip/img3.png" alt=""></li>
+                  <li><img src="Genius Computer Data_.Cip/img4.png" alt=""></li>
+             <li><img src="Genius Computer Data_.Cip/img5.png" alt=""></li>    
+    </ul>
+  </marquee>
+</div>
+
+<div class="Card"> 
+  <h2>OUR Courses Details</h2>
+           <ul id="Op"  >
+            <li>
+                <h1>Ai: Artificial Intelligence</h1>
+                <p>Help with Microsoft (Word,Excel,PowerPoint)</p>
+                <p>Ganrate Ai Video & Voice </p>
+                <p>Ganrate Images</p>
+                <p>Ganrate Card's & Banner</p>
+                  <p>Desingn Template Esy Learn</p>
+                   <p>How to us Ai ?</p>
+        
+                         <h4> <a class="BTN" href="Genius computer From.html">Learn! ↗</a><p>Duration:  3Month</p></h4>
+                </li>
+
+            <li >
+                <h1>ACCA:Certificate In Computer Accounting</h1>
+                <p>Basic Fundamental</p>
+                <p>Windows</p>
+                <p>Ms Office (Word,Excel,PowerPoint)</p>
+                <p>CPCT Preparation</p>
+                  <p>Tally Prime(With Gst)</p>
+                   <p>Graphics Desingn (Photo Shop, Corel Draw, Pagemaker)</p>
+                    <p>Hindi + English Typing</p>
+                     <p>Internet</p>
+                         <h4> <a class="BTN" href="Genius computer From.html">Learn! ↗</a><p>Duration: 6 Month</p></h4>
+                </li>
+         
+             <li>
+                <h1>CCA: Certificate In Computer Application</h1>
+                <p>Basic Fundamental</p>
+                <p>Windows</p>
+                <p>Ms Office (Word,Excel,PowerPoint)</p>
+                <p>Hindi + Englesh Typing </p>
+                <p>Internet</p>
+<h4> <a class="BTN" href="Genius computer From.html">Learn! ↗</a><p>Duration: 3 Month</p></h4>
+            </li>
+                  
+             <li>
+                <h1>DCA: Diploma In Computer Application</h1>
+               <h5>Sem-1</h5>
+                 <p>Computer Fundamentals</p>
+                 <p>Pc Packages (Word,Excel,Power Point)</p>
+                 <p>Data Base Using Foxpro</p>
+                 <p>Ms Acces</p>
+                <h5>Sem-2</h5>
+                 <p>It Treds</p>
+                 <p>Internet & E - Commerce</p>
+                 <p>Multi Media With Corel Draw</p>
+                 <p>DTP With Pagemaker & Photo Shop</p>
+   <h4> <a class="BTN" href="Genius computer From.html">Learn! ↗</a><p>Duration: 1 Year</p></h4>
+            </li>
+         
+             <li>
+                <h1>PGDCA: Post Graduate Diploma In Computer Application</h1>
+                 <h5>Sem-1</h5>
+                 <p>Computer Fundamentals</p>
+                 <p>Pc Packages (Word,Excel,Power Point)</p>
+                 <p>Ms Acess</p>
+                 <p>Data Base Using My sql</p>
+                 <p>Multi Media</p>
+                 <p>Veb.net</p>
+                <h5>Sem-2</h5>
+                 <p>It Treds</p>
+                 <p>Internet & Web Desingn</p>
+                 <p>Tally</p>
+                 <p>DTP With Page Maker & Photo Shop</p>
+   <h4> <a class="BTN" href="Genius computer From.html">Learn! ↗</a><p>Duration: 1 Year</p></h4>
+            </li>
+             <li>
+                <h1>CPCT: Training Course</h1>
+                <p>Basic Fundamental</p>
+                <p>Windows</p>
+                <p>Ms Office (Word,Excel,Power Point)</p>
+                <p>Libre Office + Exam Preparation</p>
+                <p>Hindi + English Typing</p>
+                <p>Internet</p>
+   <h4> <a class="BTN" href="Genius computer From.html">Learn! ↗</a><p>Duration: 4 Month</p></h4>
+     
+            </li>
+             <li>
+                <h1>Programing</h1>
+                <p>Java</p>
+                <p>Python</p>
+                <p>C,C++</p>
+   <h4> <a class="BTN" href="Genius computer From.html">Learn! ↗</a><p>Duration: 3 Month</p></h4>
+            </li>
+
+             <li>
+                <h1>Graphics Designing + Desktop Publishing </h1>
+                <p>Corel Draw</p>
+                <p>Photo Shop</p>
+                <p>Pagemaker</p>
+                <p>Canva</p>
+   <h4> <a class="BTN" href="Genius computer From.html">Learn! ↗</a><p>Duration: 3 Month</p></h4>
+            </li>
+            <li>
+                <h1>Web Desingn Course</h1>
+                <p>Html</p>
+                <p>Css</p>
+                <p>Java Script</p>
+   <h4> <a class="BTN" href="Genius computer From.html">Learn! ↗</a><p>Duration: 3 Month</p></h4>
+            </li>
+            
+           </ul>
+</div>
+
+
+<div class="RC">
+    <p>Name: Ajay Prajapat Sir.</p>
+    <p>Mob. No. 6261370529</p>
+    <p>Contect Google Map Live Location: <br><br> <iframe src="https://www.google.com/maps/embed?pb=!4v1777891151790!6m8!1m7!1soC7WvKY3AC3iLdqlQalpLQ!2m2!1d23.17697660943464!2d75.78782530946118!3f50.73984262681171!4f10.631802387587683!5f1.747787479835849" width="50%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="MM"></iframe></p>
+</div>
+<div class="icc">
+   <a href="tel:91626137529"><p><img src="Icon/me.png" alt=""> Us Call. Now.</p></a>
+   <a href="https://ajayprajapat771@gmail.com"><p><img src="Icon/Gmail.png" alt="">Gmail</p></a>
+      <p><img src="Icon/whatshap.png" alt=""> Whatshap. Us</p>
+      <p><img src="Icon/facboock.png" alt=""> Facbook.</p>
+      <p><img src="Icon/instagram.png" alt="">  Instagram.</p>
+</div>
+
+<script>
+
+
+    let SS = document.getElementById("SS");
+    let sec = document.getElementById("Sec");
+    let TT = document.getElementById("MM");
+    let Fun = document.getElementById("Op");
+    let cls = document.getElementById("close");
+    let Secc = document.getElementById("Secc");
+   
+
+
+    window.addEventListener("scroll",()=> {
+
+        if(window.scrollY > 50){
+             sec.classList.add("active");
+             sec.style.zIndex="3";
+             sec.style.border="2px solid black";
+                 Fun.classList.add("show");
+                 Secc.classList.add("this");
+                
+
+          
+
+            
+        } 
+    
+        
+        else{
+            sec.classList.remove("active");
+            Secc.style.position="block";
+        
+              Fun.classList.remove("show");
+             sec.style.border="0px solid black";
+        
+
+        }
+
+        })
+
+
+    function Open(){
+     
+
+        if(Secc.style.width==="40%"){
+            Secc.style.width="0px";
+            Secc.style.transform="rotate(360deg)";
+         cls.innerHTML="|||";
+            
+          
+         
+       
+
+          
+        }
+        else{
+            Secc.style.width="40%";
+            Secc.style.transform="rotate(360deg)";
+             cls.innerHTML="✖";
+             window.location.href="#Genius";
+        }  
+    }    
+</script>
+    
+</body>
+</html>
