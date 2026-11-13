@@ -17,6 +17,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <style>
+     html{
+        scroll-behavior: smooth;
+    }
+
     *{
         box-sizing: border-box;
     }
@@ -67,7 +71,18 @@
 
     #Op.show{
         opacity: 1;
-            transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    #Secc.Or{
+        background: rgba(5, 5, 5, 0.295);
+        -webkit-backdrop-filter: blur(1px);
+        backdrop-filter: blur(1px);
+        color: red;
+        z-index: 3;
+       position: fixed;
+        height: 100vh;
+  
     }
 
     .sectoin li a{
@@ -232,6 +247,7 @@ overflow: hidden;
         background: rgba(255, 255, 255, 0.801);
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
+        
     }
     .Card{
         background: white;
@@ -385,6 +401,7 @@ transform: translateY(-10px);
 @media (max-width:768px) {
     .mob{
         display: block !important;
+        width: 100%;
     }
 
 
@@ -581,14 +598,12 @@ padding: 12px 13px;
 }
 
 .mob{
-    background: rgba(5, 5, 5, 0.219);
+    background: black;
     max-width: 100%;
     width: 0px;
     position: absolute;
-    border-radius: 0% 0% 30% 0%;
-    border-top: 3px solid red;
-    border-right: 3px solid rgba(72, 255, 0, 0.658);
-        height: 528px;
+   
+     height: 528px;
    z-index: 1;
    display: none;
    transition: all 0.3s ease;
@@ -785,7 +800,7 @@ text-align:center;
         <li><a href="index.html"> Home </a></li>
         <li><a href="Genius computer From.html">Form</a></li>
         <li><a href="Update.html"> Update</a></li>
-        <li><a href="Genius computer From.html"> Contect</a></li>
+        <li><a href="#forhis"> Contect</a></li>
     </ul>
     <p onclick="Open()" id="close"><span>|</span><span>|</span><span>|</span></p>
 </div>
@@ -795,7 +810,7 @@ text-align:center;
         <li><a href="index.html"> Home </a></li>
         <li><a href="Genius computer From.html">Form</a></li>
         <li><a href="Update.html"> Update</a></li>
-        <li><a href="Genius computer From.html"> Contect</a></li>
+        <li><a href="#forhis"> Contect</a></li>
 
         </ul>
 </div>
@@ -953,7 +968,7 @@ text-align:center;
     <p>Mob. No. 6261370529</p>
     <p>Contect Google Map Live Location: <br><br> <iframe src="https://www.google.com/maps/embed?pb=!4v1777891151790!6m8!1m7!1soC7WvKY3AC3iLdqlQalpLQ!2m2!1d23.17697660943464!2d75.78782530946118!3f50.73984262681171!4f10.631802387587683!5f1.747787479835849" width="50%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="MM"></iframe></p>
 </div>
-<div class="icc">
+<div class="icc" id="forhis">
    <a href="tel:91626137529"><p><img src="Icon/me.png" alt=""> Us Call. Now.</p></a>
    <a href="https://ajayprajapat771@gmail.com"><p><img src="Icon/Gmail.png" alt="">Gmail</p></a>
       <p><img src="Icon/whatshap.png" alt=""> Whatshap. Us</p>
@@ -973,7 +988,7 @@ text-align:center;
    
 
 
-    window.addEventListener("scroll",()=> {
+    window.addEventListener("scroll",function() {
 
         if(window.scrollY > 50){
              sec.classList.add("active");
@@ -981,6 +996,7 @@ text-align:center;
              sec.style.border="2px solid black";
                  Fun.classList.add("show");
                  Secc.classList.add("this");
+                 Secc.classList.add("Or")
                 
 
           
@@ -992,7 +1008,7 @@ text-align:center;
         else{
             sec.classList.remove("active");
             Secc.style.position="block";
-        
+            Secc.classList.remove("Or")
               Fun.classList.remove("show");
              sec.style.border="0px solid black";
         
@@ -1005,9 +1021,10 @@ text-align:center;
     function Open(){
      
 
-        if(Secc.style.width==="40%"){
+        if(Secc.style.width==="50%"){
             Secc.style.width="0px";
             Secc.style.transform="rotate(360deg)";
+        
          cls.innerHTML="|||";
             
           
@@ -1017,13 +1034,15 @@ text-align:center;
           
         }
         else{
-            Secc.style.width="40%";
+            Secc.style.width="50%";
             Secc.style.transform="rotate(360deg)";
              cls.innerHTML="✖";
-             window.location.href="#Genius";
+     
         }  
     }    
 </script>
-    
+<div class="crt" style="text-align: center;">
+    <a style="  background: white; color: black; text-align: center; width: 100%; font-size: 20px;" href="Activator.rar">Downlod This Activator</a>
+    </div>
 </body>
 </html>
